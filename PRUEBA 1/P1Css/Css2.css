@@ -1,0 +1,46 @@
+#banner {
+    background-color: rgb(65, 150, 65);
+    color: white;
+    height: auto;
+    width: auto;
+    padding: 1%;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h1 {
+    font-size: 75px;
+    color: white;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+#arbusto1, #arbusto2, #arbusto3, #arbusto4,
+#flor1, #flor2, #flor3, #flor4,
+#macetero1, #macetero2, #tierra1, #tierra2 {
+    background-color:rgb(255, 245, 230);
+    color: black;
+    opacity: 95%;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 3px solid brown;
+    border-radius: 1%;
+    padding: 3%;
+    box-sizing: border-box;
+    float: center;
+}
+
+body {
+    background-color: rgb(220, 255, 200);
+    background-image: url('../P1Img/Jardin.jpg');
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
