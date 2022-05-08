@@ -1,0 +1,22 @@
+/* FORMULARIO ################################ */
+.container {
+    background-color:rgb(255, 255, 255);
+    color: brown;
+    opacity:100%;
+    font-size: 16px;
+    font-weight: bold;
+    width: auto;
+    height: auto;
+    padding: 3%;
+    margin: 1%;
+    border-radius: 3%;
+    box-sizing: border-box;
+}
+
+/* BG Color y Font ########################### */
+body {
+    background-color: rgb(220, 255, 200);
+    background-image: url('../P1Img/Jardin1.jpg');
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
