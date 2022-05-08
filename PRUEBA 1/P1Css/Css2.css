@@ -2,25 +2,25 @@
     background-color: rgb(65, 150, 65);
     color: white;
     height: auto;
-    width: auto;
-    padding: 1%;
+    width: 100%;
+    padding: 5%;
     margin-bottom: 50px;
     box-sizing: border-box;
     text-align: center;
 }
 
 h1 {
-    font-size: 75px;
+    font-size: 50px;
     color: white;
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 15px;
 }
 
 #arbusto1, #arbusto2, #arbusto3, #arbusto4,
@@ -28,19 +28,29 @@ h3 {
 #macetero1, #macetero2, #tierra1, #tierra2 {
     background-color:rgb(255, 245, 230);
     color: black;
-    opacity: 95%;
-    margin-left: 50px;
-    margin-right: 50px;
+    opacity: 100%;
+    margin-left: 150px;
+    margin-right: 150px;
     border: 3px solid brown;
     border-radius: 1%;
     padding: 3%;
     box-sizing: border-box;
     float: center;
+    background-image: url('../P1Img/WP3.jpg');
+    background-attachment: scroll;
+}
+
+img {
+width: 150%;
+height: auto;
+margin-bottom: 50px;
+border-radius: 3%;
+box-sizing: border-box;
 }
 
 body {
     background-color: rgb(220, 255, 200);
-    background-image: url('../P1Img/Jardin.jpg');
+    background-image: url('../P1Img/Jardin1.jpg');
     background-attachment: fixed;
     font-family: sans-serif;
 }
