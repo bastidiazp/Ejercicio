@@ -18,21 +18,44 @@
         <div id="i0"><center><img src="P1Img/Logo Main.png" alt="Logo"></center></div>
 
         <div id="wrapper">
-            <header>
-            </header>
-            <nav>
-                <a href="#productos">Nuestros Productos</a>
-                <a href="#nosotros">¿Quiénes Somos?</a>
-                <a href="P1Form.html">Únetenos</a>
-                <a href="">Mi Cuenta</a>
-            </nav>
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="P1Img/Logo Icon.png" alt="Icon" width="125" height="125" class="d-inline-block">
+                Jardinería
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Nuestros Productos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="P1Producto.html#arbusto">Arbustos</a></li>
+                      <li><a class="dropdown-item" href="P1Producto.html#flores">Flores</a></li>
+                      <li><a class="dropdown-item" href="P1Producto.html#maceteros">Maceteros</a></li>
+                      <li><a class="dropdown-item" href="P1Producto.html#tierras">Tierra de Hojas</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#nosotros">¿Quiénes Somos?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="P1Form.html">Únetenos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </div>
-
-        <div id="destacados">
-          <p><center>Productos Destacados:</center></p>
-        </div>
-
-        <!-- CARRUSEL ##########################################################################-->        
+        
+        <!-- CARRUSEL ##########################################################################-->
         <center><div id="carrusel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -68,9 +91,15 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
         
-        <!-- MAIN ############################################################################# -->        
+        <!-- MAIN ############################################################################# -->
         <a name="productos"></a>
+
+        <div id="destacados">
+          <p><center>Productos Destacados:</center></p>
+        </div>
+
         <div id="main">
+          <div id="menumain">
             <nav>
                 <ul>
                     <li><a href="P1Producto.html#arbusto">Arbustos</a></li>
@@ -80,40 +109,47 @@
                     <br><br><br>
                     <li><a href="#nosotros">¿Quiénes Somos?</a></li>
                 </ul>
-            </nav>            
-        </div>
+            </nav>
+          </div>
 
-        <!--ASD-->
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card">
-              <a href="P1Producto.html#arbusto"></a><img src="P1Img/A1.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Arbusto</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam animi quam ducimus beatae quisquam harum, sapiente, nobis iure nisi fuga quis sequi? Voluptate distinctio aperiam neque, dolore repudiandae ut corporis!</p>
+          <!-- ESTRUCTURA TARJETAS ########################################################## -->
+          <div id="tarjetas">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="card">
+                  <a href="P1Producto.html#arbusto"><img src="P1Img/A1.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Arbusto</h5>
+                    <p class="card-text">Los mejores y más adecuados Arbustos para su hermoso jardín.</p>
+                    <a href="P1Producto.html#arbusto" class="btn btn-primary">Ver más Arbustos</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card">
+                  <a href="P1Producto.html#flores"><img src="P1Img/F1.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Flores</h5>
+                    <p class="card-text">Las mejores y más adecuadas Flores para su hermoso jardín.</p>
+                    <a href="P1Producto.html#flores" class="btn btn-primary">Ver más Flores</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card">
+                  <a href="P1Producto.html#tierras"><img src="P1Img/T1.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Tierra</h5>
+                    <p class="card-text">Las mejores y más adecuadas Tierras para su hermoso jardín.</p>
+                    <a href="P1Producto.html#tierras" class="btn btn-primary">Ver más Tierras</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card">
-              <a href="P1Producto.html#flores"></a><img src="P1Img/F1.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Flor</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt rem quasi aliquam? Quo animi recusandae, enim in repellat fugit nobis pariatur minus ut vero repellendus, quaerat perferendis quae, similique veniam.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <a href="P1Producto.html#tierras"></a><img src="P1Img/T1.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Tierra</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, omnis deserunt necessitatibus corrupti voluptatibus temporibus veritatis. Est, nihil soluta perspiciatis quos odit deserunt dolorem saepe sit ipsum porro itaque delectus.</p>
-              </div>
-            </div>
-          </div>          
+          
         </div>
-
+        
         <div id="i1"><center><a href="P1Producto.html"><img src="P1Img/Productos.jpg" alt="Productos"></center></div>
 
         <!-- FOOTER ########################################################################### -->

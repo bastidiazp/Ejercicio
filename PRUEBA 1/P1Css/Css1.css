@@ -42,67 +42,116 @@
     box-sizing: border-box;
 }
 
-/* WRAPPER o BANNER*/
+/* WRAPPER o BANNER ########################## */
 #wrapper {
     background-color: rgb(65, 150, 65);
-    height: auto;
     width: 100%;
-    padding: 5%;
+    height: auto;
+    padding: 2%;
     box-sizing: border-box;
-    text-align: center;
+    background-image: url('../P1Img/BG1.jpg');
+    background-attachment: scroll;
 }
 
-#wrapper nav a {
-    color: rgb(255, 255, 255);
-    width: 150px;
+#wrapper .navbar-brand {
+    color: rgb(216, 154, 20);
     font-size: 30px;
     font-weight: bold;
-    text-decoration: none;
-    padding: 1%;
+    padding-left: 3%;
+    padding-right: 1%;
 }
 
-#wrapper nav a:hover {
-    color: rgb(216, 180, 20);
+#wrapper .dropdown-menu {
+    background-color: rgb(15, 60, 40);
+}
+
+#wrapper nav ul li {
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+    list-style: none;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+#wrapper nav ul li a {
+    color: rgb(255, 255, 255);
+    width: 300px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#wrapper nav ul li a:hover {
+    color: rgb(216, 154, 20);
     transition: 1s;
 }
 
-/* PRODUCTOS DESTACADOS */
+/* PRODUCTOS DESTACADOS ###################### */
 #destacados {
     background-color: rgb(255, 245, 230);
     color: brown;
-    opacity: 85%;
+    opacity: 100%;
     font-size: 50px;
     font-weight: bold;
     padding: 2%;
+    background-image: url('../P1Img/WP3.jpg');
+    background-attachment: scroll;
 }
 
-/* MAIN/PRODUCTOS */
+/* MAIN/PRODUCTOS ############################ */
 #main {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #51302a;
-    color: white;
     opacity: 100%;
-    font-size: 25px;
-    font-weight: bold;
     width: 100%;
     height: auto;
-    padding: 8%;
+    padding: 4%;
+    padding-left: 8%;
+    padding-right: 8%;
     box-sizing: border-box;
     float: center;
     background-image: url('../P1Img/WP1.jpg');
     background-attachment: scroll;
 }
 
+#main #menumain {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    width: 30%;
+    height: auto;
+    list-style: none;
+}
+
+#main #menumain ul li {
+    width: 100%;
+}
+
+#main #tarjetas {
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    min-width: 270px;
+    height: auto;
+    padding: 5%;
+    border-radius: 1%;
+    box-sizing: border-box;
+    background-image: url('../P1Img/WP3.jpg');
+    background-attachment: scroll;
+}
+
 #main nav ul li a {
     color: rgb(255, 255, 255);
     width: 150%;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: bold;
     text-decoration: none;
     padding-left: 5%;
 }
 
 #main nav ul li a:hover {
-    color: rgb(250, 220, 90);
+    color: rgb(216, 154, 20);
     transition: 1s;
 }
 
@@ -130,6 +179,8 @@
     height: auto;
     padding: 3%;
     box-sizing: border-box;
+    background-image: url('../P1Img/BG2.jpg');
+    background-attachment: scroll;
 }
 
 #nosotros2 ul li {
@@ -150,7 +201,7 @@
 }
 
 #nosotros2 ul li a:hover {
-    color: rgb(216, 180, 20);
+    color: rgb(216, 154, 20);
     transition: 1s;
 }
 
@@ -171,7 +222,7 @@
 }
 
 #unetenos a:hover {
-    color: rgb(255, 135, 0);
+    color: rgb(255, 150, 28);
     transition: 1s;
 }
 
