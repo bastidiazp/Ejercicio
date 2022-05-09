@@ -10,21 +10,16 @@
 }
 
 h1 {
-    font-size: 50px;
     color: white;
 }
 
 h2 {
-    font-size: 30px;
     text-align: center;
-}
-
-h3 {
-    font-size: 30px;
+    text-decoration: none;
 }
 
 p {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 #arbusto1,
@@ -44,10 +39,8 @@ p {
     opacity: 100%;
     margin-left: 2%;
     margin-right: 2%;
-    border-radius: 1%;
     padding: 3%;
     box-sizing: border-box;
-    float: center;
     background-image: url('../P1Img/WP3.jpg');
     background-attachment: scroll;
 }
@@ -55,12 +48,11 @@ p {
 img {
     width: 75%;
     height: auto;
-    border-radius: 3%;
+    padding: 5%;
     box-sizing: border-box;
 }
 
 body {
-    width: 100%;
     background-color: rgb(220, 255, 200);
     background-image: url('../P1Img/Jardin1.jpg');
     background-attachment: fixed;

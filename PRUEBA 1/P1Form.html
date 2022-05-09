@@ -2,8 +2,8 @@
 <html lang="EN">
 
 <head>
-    <title>Formulario de Inscripción</title>
     <meta charset="UTF-8">
+    <title>Formulario de Inscripción</title>
     <meta name="viewport" content="eidth=device-width, initial-scale=1">
     <!-- Hipervinculo a CSS ####################################################################-->
     <link rel="stylesheet" href="P1Css/Css3.css">
@@ -20,10 +20,10 @@
             <div class="mb-3">
                 <div class="row">
                     <div class="col">
-                        <input type="text" class="form-control" name="nombre" placeholder="Introduzca su Nombre">
+                        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Introduzca su Nombre">
                     </div>
                     <div class="col">
-                        <input type="text" class="form-control" name="apellido" placeholder="Introduzca su Apellido">
+                        <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Introduzca su Apellido">
                     </div>
                 </div>
             </div>
@@ -104,9 +104,11 @@
                 </div>
             </div>
             <div class="mb-3">
-                <button type="submit" class="btn btn-primary">Enviar Inscripción</button>
+                <button type="submit" class="btn btn-primary" onclick = 'enviarFormulario();'>Enviar Inscripción</button>
             </div>
         </form>
+        <div id = 'error'></div>
+        <script src = 'Validaciones.js'></script>
     </div>
 
     <!-- SCRIPT SEPARADOR ######################################################################-->
