@@ -1,15 +1,15 @@
-var nombre = document.getElementById('nombre');
-var apellido = document.getElementById('apellido');
-var edad = document.getElementById('edad');
-var correo = document.getElementById('correo');
-var pass = document.getElementById('pass');
+let nombre = document.getElementById('nombre');
+let apellido = document.getElementById('apellido');
+let edad = document.getElementById('edad');
+let correo = document.getElementById('correo');
+let pass = document.getElementById('pass');
 
-var error = document.getElementById('error');
+let error = document.getElementById('error');
 error.style.color = 'red';
 
 function enviarFormulario() {
     console.log('Enviando formulario...');
-    var mensajesError = [];
+    let mensajesError = [];
 
     if (nombre.value === null || nombre.value === '') {
         mensajesError.push('Ingresa tu nombre');
