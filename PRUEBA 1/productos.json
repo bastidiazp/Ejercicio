@@ -1,71 +1,80 @@
 {
     "productos": {
         "301": {
+            "imagen": "https://i.imgur.com/9I7vhu3.jpg",
             "nombre": "Rhus Crenatta 0,50 m",
             "precio": "$13.990",
             "descripción": "Producto marca Las Bandurrias, de fertilización en Otoño;Primavera;Verano, de altura a los dos años de 97,5 cm."
         },
         "302": {
+            "imagen": "https://i.imgur.com/dTrg6X9.jpg",
             "nombre": "Evonimo Nana 0,15 m",
             "precio": "$9.990",
             "descripción": "Producto marca Las Bandurrias, de fertilización en Otoño;Primavera;Verano, de altura a los dos años de 47,5 cm."
         },
         "303": {
+            "imagen": "https://i.imgur.com/m8hMDGX.jpg",
             "nombre": "Sarcococa 0,3 m",
             "precio": "$6.990",
             "descripción": "Producto marca Vivero Los Boldos, de fertilización en Primavera, de altura a los dos años de 65 cm."
         },
         "304": {
+            "imagen": "https://i.imgur.com/vLT6Nxc.jpg",
             "nombre": "Hebe Queen colores 20 cm CT17",
             "precio": "$4.990",
             "descripción": "Producto marca Viveros Hijuelas, de fertilización en Primavera;Verano, de altura a los dos años de 50 cm."
         },
         "305": {
+            "imagen": "https://i.imgur.com/MVliasM.jpg",
             "nombre": "Caléndula 0,10 m",
             "precio": "$590",
             "descripción": "Producto marca Flores De Mi Tierra, de fertilización en Primavera;Verano;Otoño, de altura a los dos años de 17.5 cm."
         },
         "306": {
+            "imagen":"https://i.imgur.com/GcGn1fa.jpg",
             "nombre": "Cardenal Fantasy 0,15 m",
             "precio": "$7.990",
             "descripción": "Producto marca Flores De Mi Tierra, de fertilización en Primavera;Verano;Otoño, de altura a los dos años de 47.5 cm."
         },
         "307": {
+            "imagen": "https://i.imgur.com/qZZYOUp.jpg",
             "nombre": "Osteospermum 0,20 m",
             "precio": "$7.490",
             "descripción": "Producto marca Las Bandurrias, de fertilización en Primavera;Verano;Otoño, de altura a los dos años de 47.5 cm."
         },
         "308": {
+            "imagen": "https://i.imgur.com/Wnj1p2N.jpg",
             "nombre": "Argyranthemum 0,20 m",
             "precio": "$3.990",
             "descripción": "Producto marca Las Bandurrias, de fertilización en Invierno;Primavera;Verano;Otoño, de altura a los dos años de 57.5 cm."
         },
         "309": {
+            "imagen": "https://i.imgur.com/QMLlNxr.jpg",
             "nombre": "Geranio 0,30 m",
             "precio": "$1.990",
             "descripción": "Producto marca Las Bandurrias, de fertilización en Primavera;Verano, de altura a los dos años de 75 cm."
         },
+        
         "310": {
-            "nombre": "Geranio 0,30 m",
-            "precio": "$1.990",
-            "descripción": "Producto marca Las Bandurrias, de fertilización en Primavera;Verano, de altura a los dos años de 75 cm."
-        },
-        "311": {
+            "imagen":"https://i.imgur.com/Vaw93yp.jpg",
             "nombre": "Macetero redondo estilo piedra plastico 18 cm taupe",
             "precio": "$2.590",
             "descripción": "Producto marca Reyplast, de Material plástico, de color Taupe."
         },
-        "312": {
+        "311": {
+            "imagen": "https://i.imgur.com/n5j7WuL.jpg",
             "nombre": "Macetero N.12 34 cm",
             "precio": "$4.790",
             "descripción": "Producto marca Casa Bonita, de Material plástico, de color Café."
         },
-        "313": {
+        "312": {
+            "imagen": "https://i.imgur.com/47b9Z1f.jpg",
             "nombre": "Tierra para Maceteros 15 litros saco",
             "precio": "$3.690",
             "descripción": "Producto marca Armony, de presentación en Saco."
         },
-        "314": {
+        "313": {
+            "imagen": "https://i.imgur.com/2znmWDo.jpg",
             "nombre": "Tierra para Maceteros 25 litros saco",
             "precio": "$6.890",
             "descripción": "Producto marca Anasac, de presentación en Saco."
