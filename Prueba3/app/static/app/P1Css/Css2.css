@@ -1,0 +1,80 @@
+#banner {
+    background-color: rgb(65, 150, 65);
+    color: white;
+    padding: 5%;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    background-image: url('../P1Img/BG1.jpg');
+    background-attachment: scroll;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: none;
+}
+
+p {
+    font-size: 15px;
+}
+
+#productos {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#arbusto1,
+#arbusto2,
+#arbusto3,
+#arbusto4,
+#flor1,
+#flor2,
+#flor3,
+#flor4,
+#macetero1,
+#macetero2,
+#tierra1,
+#tierra2 {
+    background-color: rgb(255, 245, 230);
+    color: black;
+    opacity: 100%;
+    padding: 3%;
+    box-sizing: border-box;
+    background-image: url('../P1Img/WP3.jpg');
+    background-attachment: scroll;
+}
+
+#api {
+    background-color: rgb(255, 245, 230);
+    color: black;
+    padding: 3%;
+    margin-bottom: 50px;
+    margin-left: 2%;
+    margin-right: 2%;
+    box-sizing: border-box;
+    background-image: url('../P1Img/WP3.jpg');
+    background-attachment: scroll;
+}
+
+#tabla {
+    background-color: rgb(255, 255, 255);
+    padding: 3%;
+}
+
+img {
+    width: 75%;
+    height: auto;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(220, 255, 200);
+    background-image: url('../P1Img/Jardin1.jpg');
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
