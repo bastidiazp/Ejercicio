@@ -15,7 +15,7 @@ def productos(request):
 
 def formulario(request):
     data = {
-        'form': FormularioForm
+        'form': FormularioForm()
     }
 
     if request.method == 'POST':
@@ -37,7 +37,7 @@ def agregar_producto(request):
         formulario = ProductoForm(data=request.POST, files=request.FILES)
         if formulario.is_valid():
             formulario.save()
-            data["mensaje"] = "Guardado Exitosamente!"
+            data["mensaje"] = "¡Agregado Exitosamente!"
         else:
             data["form"] = formulario
 
@@ -64,7 +64,12 @@ def modificar_producto(request, id):
         formulario = ProductoForm(data=request.POST, instance=producto, files=request.FILES)
         if formulario.is_valid():
             formulario.save()
-            return redirect(to="listar_productos")
+            return redirect(to="listar_producto")
         data["form"] = formulario
 
     return render(request, 'app/items/modificar.html', data)
+
+def eliminar_producto(request, id):
+    producto = get_object_or_404(Producto, id=id)
+    producto.delete()
+    return redirect(to="listar_producto")

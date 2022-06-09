@@ -18,7 +18,15 @@
     <a name="inicio"></a>
     <div id="banner">
         <a href="{% url 'home' %}">
-            <h1>Inicio</h1>
+            <h1 style="font-weight: bolder;">Inicio</h1>
+        </a>
+        <br>
+        <a href="{% url 'home' %}#nosotros">
+            <h1 style="font-weight: bolder;">¿Quiénes Somos?</h1>
+        </a>
+        <br>
+        <a href="{% url 'formulario' %}">
+            <h1 style="font-weight: bolder;">Únetenos</h1>
         </a>
     </div>
 
@@ -26,7 +34,7 @@
     <div id="api">
         <div class="container">
             <div class="row mb-12">
-                <h3>
+                <h3 style="font-weight: bolder; color: brown;">
                     <center>Ultimos Productos incorporados a Jardinería</center>
                 </h3>
             </div>
@@ -88,7 +96,8 @@
                                         <p class="card-text">{{ p.especie | title }}</p>
                                         <p class="card-text">{{ p.fecha_entrada | capfirst }}</p>
                                         <p class="card-text">{{ p.descripcion | capfirst }}</p>
-                                        <p class="card-text"><small class="text-muted">${{ p.precio | intcomma }}</small></p>
+                                        <p class="card-text"><small
+                                                class="text-muted">${{ p.precio | intcomma }}</small></p>
                                     </div>
                                 </div>
                             </div>
@@ -97,7 +106,7 @@
                             <h2>Volver</h2>
                         </a>
                     </div>
-                </div>                
+                </div>
             </div>
         </div><br>
         {% endfor %}
@@ -744,7 +753,7 @@
     <!-- SCRIPT JQUERY #########################################################################-->
     <script>
         window.onload = function () {
-            $.get("https://productosjardineria-40e7b-default-rtdb.firebaseio.com/productos.json",
+            $.get("https://apijardineria-default-rtdb.firebaseio.com/productos.json",
                 function (data) {
                     //DATA CAPTURA LO QUE RETORNA LA API
                     //console.log(data)
@@ -759,6 +768,7 @@
                 });
         };
     </script>
+
 </body>
 
 </html>

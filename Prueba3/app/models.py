@@ -12,7 +12,7 @@ class Tipo(models.Model): #TIPO = ARBUSTO, FLORES, MACETEROS, TIERRAS
 class Producto(models.Model): #PRODUCTO = NOMBRE, ESPECIE, DESCRIPCION, PRECIO, NOVEDAD, TIPO, FECHA DE ENTRADA A TIENDA
     nombre = models.CharField(max_length=50)
     especie = models.CharField(max_length=50)
-    descripcion = models.TextField()
+    descripcion = models.TextField() 
     precio = models.IntegerField()
     novedad = models.BooleanField()
     tipo = models.ForeignKey(Tipo, on_delete=models.PROTECT)
@@ -59,7 +59,7 @@ class Formulario(models.Model):
     nombre = models.CharField(max_length=50)
     apellido = models.CharField(max_length=50)
     edad = models.IntegerField()
-    direccion = models.TextField()
+    direccion = models.CharField(max_length=100)
     tipo_pais = models.IntegerField(choices=opciones_pais)
     tipo_region = models.IntegerField(choices=opciones_region)
     tipo_flores = models.IntegerField(choices=opciones_flores)

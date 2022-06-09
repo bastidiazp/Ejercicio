@@ -11,14 +11,14 @@
 }
 
 /* MEDIDAS IMGs ############################## */
-#i0 img{
+#i0 img {
     width: 75%;
     height: auto;
     margin-bottom: 5%;
     box-sizing: border-box;
 }
 
-#i1 img{
+#i1 img {
     width: 75%;
     height: auto;
     margin-top: 3%;
@@ -30,7 +30,7 @@
     box-sizing: border-box;
 }
 
-#i2 img{
+#i2 img {
     width: 75%;
     height: auto;
     margin-top: 3%;
@@ -157,9 +157,9 @@
 
 /* NOSOTROS 1 ################################ */
 #nosotros1 {
-    background-color:rgb(255, 245, 230);
+    background-color: rgb(255, 245, 230);
     color: brown;
-    opacity:100%;
+    opacity: 100%;
     font-size: 30px;
     font-weight: bold;
     width: 100%;
@@ -172,7 +172,7 @@
 
 /* NOSOTROS 2 ################################ */
 #nosotros2 {
-    background-color:rgb(65, 150, 65);
+    background-color: rgb(65, 150, 65);
     color: rgb(255, 255, 255);
     text-align: center;
     width: 100%;
