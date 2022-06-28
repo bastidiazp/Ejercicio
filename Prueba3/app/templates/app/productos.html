@@ -18,7 +18,15 @@
     <a name="inicio"></a>
     <div id="banner">
         <a href="{% url 'home' %}">
-            <h1>Inicio</h1>
+            <h1 style="font-weight: bolder;">Inicio</h1>
+        </a>
+        <br>
+        <a href="{% url 'home' %}#nosotros">
+            <h1 style="font-weight: bolder;">¿Quiénes Somos?</h1>
+        </a>
+        <br>
+        <a href="{% url 'formulario' %}">
+            <h1 style="font-weight: bolder;">Únetenos</h1>
         </a>
     </div>
 
@@ -26,7 +34,7 @@
     <div id="api">
         <div class="container">
             <div class="row mb-12">
-                <h3>
+                <h3 style="font-weight: bolder; color: brown;">
                     <center>Ultimos Productos incorporados a Jardinería</center>
                 </h3>
             </div>
@@ -63,6 +71,50 @@
         </script>
     </div>
 
+    <!--###########################################################################################
+    ###############################################################################################
+    ############################################################################################-->
+
+    {% load humanize %}
+    <div id="productos">
+        {% for p in productos %}
+        <div class="prodasd">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="tierra1">
+                        <div class="card mb-3" style="max-width: 100%;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    {% if p.imagen %}
+                                    <img src="{{ p.imagen.url }}" class="img-fluid rounded-start"
+                                        alt="Producto Destacado">
+                                    {% endif %}
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title">{{ p.nombre | capfirst }}</h3>
+                                        <p class="card-text">{{ p.especie | title }}</p>
+                                        <p class="card-text">{{ p.fecha_entrada | capfirst }}</p>
+                                        <p class="card-text">{{ p.descripcion | capfirst }}</p>
+                                        <p class="card-text"><small
+                                                class="text-muted">${{ p.precio | intcomma }}</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="{% url 'home' %}">
+                            <h2>Volver</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+        {% endfor %}
+    </div>
+
+    <!--###########################################################################################
+    ###############################################################################################
+    ############################################################################################-->
 
     <!--
         <div class="row">
@@ -86,7 +138,8 @@
                         <div class="card mb-3" style="max-width: 100%;">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                    <img src="{% static 'app/P1Img/A1.jpg' %}" class="img-fluid rounded-start" alt="Arbusto 1">
+                                    <img src="{% static 'app/P1Img/A1.jpg' %}" class="img-fluid rounded-start"
+                                        alt="Arbusto 1">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -134,7 +187,8 @@
                         <div class="card mb-3" style="max-width: 100%;">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                    <img src="{% static 'app/P1Img/A2.jpg' %}" class="img-fluid rounded-start" alt="Arbusto 2">
+                                    <img src="{% static 'app/P1Img/A2.jpg' %}" class="img-fluid rounded-start"
+                                        alt="Arbusto 2">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -184,7 +238,8 @@
                         <div class="card mb-3" style="max-width: 100%;">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                    <img src="{% static 'app/P1Img/A3.jpg' %}" class="img-fluid rounded-start" alt="Arbusto 3">
+                                    <img src="{% static 'app/P1Img/A3.jpg' %}" class="img-fluid rounded-start"
+                                        alt="Arbusto 3">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -232,7 +287,8 @@
                         <div class="card mb-3" style="max-width: 100%;">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                    <img src="{% static 'app/P1Img/A4.jpg' %}" class="img-fluid rounded-start" alt="Arbusto 4">
+                                    <img src="{% static 'app/P1Img/A4.jpg' %}" class="img-fluid rounded-start"
+                                        alt="Arbusto 4">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -287,7 +343,8 @@
                         <div class="card mb-3" style="max-width: 100%;">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                    <img src="{% static 'app/P1Img/F1.jpg' %}" class="img-fluid rounded-start" alt="Flor 1">
+                                    <img src="{% static 'app/P1Img/F1.jpg' %}" class="img-fluid rounded-start"
+                                        alt="Flor 1">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -335,7 +392,8 @@
                         <div class="card mb-3" style="max-width: 100%;">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                    <img src="{% static 'app/P1Img/F2.jpg' %}" class="img-fluid rounded-start" alt="Flor 2">
+                                    <img src="{% static 'app/P1Img/F2.jpg' %}" class="img-fluid rounded-start"
+                                        alt="Flor 2">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -385,7 +443,8 @@
                         <div class="card mb-3" style="max-width: 100%;">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                    <img src="{% static 'app/P1Img/F3.jpg' %}" class="img-fluid rounded-start" alt="Flor 3">
+                                    <img src="{% static 'app/P1Img/F3.jpg' %}" class="img-fluid rounded-start"
+                                        alt="Flor 3">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -433,7 +492,8 @@
                         <div class="card mb-3" style="max-width: 100%;">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                    <img src="{% static 'app/P1Img/F4.jpg' %}" class="img-fluid rounded-start" alt="Flor 4">
+                                    <img src="{% static 'app/P1Img/F4.jpg' %}" class="img-fluid rounded-start"
+                                        alt="Flor 4">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -488,7 +548,8 @@
                         <div class="card mb-3" style="max-width: 100%;">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                    <img src="{% static 'app/P1Img/M1.jpg' %}" class="img-fluid rounded-start" alt="Macetero 1">
+                                    <img src="{% static 'app/P1Img/M1.jpg' %}" class="img-fluid rounded-start"
+                                        alt="Macetero 1">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -536,7 +597,8 @@
                         <div class="card mb-3" style="max-width: 100%;">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                    <img src="{% static 'app/P1Img/M2.jpg' %}" class="img-fluid rounded-start" alt="Macetero 2">
+                                    <img src="{% static 'app/P1Img/M2.jpg' %}" class="img-fluid rounded-start"
+                                        alt="Macetero 2">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -591,7 +653,8 @@
                         <div class="card mb-3" style="max-width: 100%;">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                    <img src="{% static 'app/P1Img/T1.jpg' %}" class="img-fluid rounded-start" alt="Tierra 1">
+                                    <img src="{% static 'app/P1Img/T1.jpg' %}" class="img-fluid rounded-start"
+                                        alt="Tierra 1">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -639,7 +702,8 @@
                         <div class="card mb-3" style="max-width: 100%;">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                    <img src="{% static 'app/P1Img/T2.jpg' %}" class="img-fluid rounded-start" alt="Tierra 2">
+                                    <img src="{% static 'app/P1Img/T2.jpg' %}" class="img-fluid rounded-start"
+                                        alt="Tierra 2">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -689,7 +753,7 @@
     <!-- SCRIPT JQUERY #########################################################################-->
     <script>
         window.onload = function () {
-            $.get("https://productosjardineria-40e7b-default-rtdb.firebaseio.com/productos.json",
+            $.get("https://apijardineria-default-rtdb.firebaseio.com/productos.json",
                 function (data) {
                     //DATA CAPTURA LO QUE RETORNA LA API
                     //console.log(data)
@@ -704,6 +768,7 @@
                 });
         };
     </script>
+
 </body>
 
 </html>

@@ -10,17 +10,12 @@
     background-attachment: scroll;
 }
 
-h1 {
-    color: white;
-}
-
 /* FORMULARIO ################################ */
 #formulario {
     background-color: #ffffff;
     opacity: 100%;
-    padding: 4%;
-    margin-left: 12%;
-    margin-right: 12%;
+    padding: 3%;
+    margin-top: 50px;
     margin-bottom: 50px;
     border-radius: 1%;
     box-sizing: border-box;
@@ -29,10 +24,10 @@ h1 {
 }
 
 .container {
-    background-color:#eeeeee;
+    background-color: #eeeeee;
     color: rgb(0, 150, 20);
-    opacity:100%;
-    font-size: 16px;
+    opacity: 100%;
+    font-size: 15px;
     font-weight: bold;
     width: auto;
     height: auto;

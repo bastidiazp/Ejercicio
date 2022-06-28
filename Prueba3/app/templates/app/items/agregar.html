@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Formulario de Inscripción</title>
+    <title>Agregar Producto</title>
     <meta name="viewport" content="eidth=device-width, initial-scale=1">
     <!-- Hipervinculo a CSS ####################################################################-->
     {% load static %}
@@ -18,15 +18,7 @@
 <body>
     <div id="banner">
         <a href="{% url 'home' %}">
-            <h1 style="font-weight: bolder;">Inicio</h1>
-        </a>
-        <br>
-        <a href="{% url 'home' %}#nosotros">
-            <h1 style="font-weight: bolder;">¿Quiénes Somos?</h1>
-        </a>
-        <br>
-        <a href="{% url 'productos' %}#arbusto">
-            <h1 style="font-weight: bolder;">Productos</h1>
+            <h1 style="font-weight: bolder;">Volver</h1>
         </a>
     </div>
 
@@ -35,13 +27,13 @@
             <div class="card" id="formulario">
 
                 <div class="card-title">
-                    <h2 style="font-weight: bold; color: brown;">FORMULARIO PARA INSCRIPCIÓN</h2>
+                    <h2 style="font-weight: bold; color: brown;">AGREGAR PRODUCTO</h2>
                 </div>
 
                 <div class="card-body">
                     <div class="container">
 
-                        <form action="" class="formulario_contacto" method="post">
+                        <form action="" method="post" enctype="multipart/form-data">
 
                             {% csrf_token %}
 
@@ -58,15 +50,10 @@
                             <div class="d-flex justify-content-end">
                                 <input type="reset" value="Cancelar" class="btn btn-secondary">
                                 &nbsp;
-                                <input type="submit" value="Envia tu Solicitud" class="btn btn-primary">
+                                <input type="submit" value="Agregar" class="btn btn-primary">
                             </div>
 
                         </form>
-
-                        <!--
-            <div id='error'></div>
-            <script src='P1Js/Validaciones.js'></script>
-            -->
 
                     </div>
                 </div>
