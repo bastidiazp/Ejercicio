@@ -1,6 +1,22 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Producto
 from .forms import FormularioForm, ProductoForm
+from rest_framework import viewsets
+from .serializers import ProductoSerializer
+
+class ProductoViewset(viewsets.ModelViewSet):
+    queryset = Producto.objects.all()
+    serializer_class = ProductoSerializer
+
+    def get_queryset(self):
+        productos = Producto.objects.all()
+
+        nombre = self.request.GET.get('nombre')
+
+        if nombre: 
+            productos = productos.filter(nombre__contains=nombre)
+
+            return productos
 
 # Create your views here.
 def home(request):
