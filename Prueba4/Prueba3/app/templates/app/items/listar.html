@@ -14,10 +14,82 @@
 </head>
 
 <body>
-    <div id="banner">
-        <a href="{% url 'home' %}">
-            <h1 style="font-weight: bolder;">Volver</h1>
-        </a>
+    <div id="wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="{% url 'home' %}">
+                    <img src="{% static 'app/P1Img/Logo Icon.png' %}" alt="Icon" width="125" height="125"
+                        class="d-inline-block">
+                    Jardinería
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <!--
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'home' %}">Volver Atrás</a>
+                        </li>
+                        <!--
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Nuestros Productos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="{% url 'productos' %}#arbusto">Arbustos</a></li>
+                                <li><a class="dropdown-item" href="{% url 'productos' %}#flores">Flores</a></li>
+                                <li><a class="dropdown-item" href="{% url 'productos' %}#maceteros">Maceteros</a></li>
+                                <li><a class="dropdown-item" href="{% url 'productos' %}#tierras">Tierra de Hojas</a>
+                                </li>
+                            </ul>
+                        </li>
+                        -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'home' %}#nosotros">¿Quiénes Somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'formulario' %}">Únete a Nosotros</a>
+                        </li>
+                        {% if perms.app.add_producto %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'agregar_producto' %}">Agregar Productos</a>
+                        </li>
+                        {% endif %}
+                        <!--
+                        {% if perms.app.view_producto %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'listar_producto' %}">Listado Productos</a>
+                        </li>
+                        {% endif %}
+                        -->
+                        {% if user.is_authenticated %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'logout' %}">Cerrar Sesión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">@{{ user.username }}</a>
+                        </li>
+                        {% else %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'login' %}">Iniciar Sesión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'registro' %}">Regístrate Ahora</a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </div>
 
     <!-- INCORPORACION FUNCION ELIMINAR PRODUCTO ###############################################-->

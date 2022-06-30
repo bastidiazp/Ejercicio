@@ -1,11 +1,33 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from .models import Producto
+from .models import Producto, Tipo
 from .forms import FormularioForm, ProductoForm, CustomUserCreationForm
 from django.contrib import messages
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required, permission_required
+from rest_framework import viewsets
+from .serializers import ProductoSerializer, TipoSerializer
 
 # Create your views here.
+
+
+class TipoViewset(viewsets.ModelViewSet):
+    queryset = Tipo.objects.all()
+    serializer_class = TipoSerializer
+
+class ProductoViewset(viewsets.ModelViewSet):
+    queryset = Producto.objects.all()
+    serializer_class = ProductoSerializer
+
+    def get_queryset(self):
+        productos = Producto.objects.all()
+        nombre = self.request.GET.get('nombre')
+
+        if nombre:
+            productos = productos.filter(nombre__contains=nombre)
+
+        return productos
+
+
 def home(request):
     return render(request, 'app/home.html')
 
