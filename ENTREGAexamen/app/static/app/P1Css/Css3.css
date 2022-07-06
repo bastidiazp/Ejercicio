@@ -1,0 +1,96 @@
+/*#banner {
+    background-color: rgb(65, 150, 65);
+    color: white;
+    padding: 5%;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    background-image: url('../P1Img/BG1.jpg');
+    background-attachment: scroll;
+}*/
+
+/* WRAPPER o BANNER ########################## */
+#wrapper {
+    background-color: rgb(65, 150, 65);
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    background-image: url('../P1Img/BG1.jpg');
+    background-attachment: scroll;
+}
+
+#wrapper .navbar-brand {
+    color: rgb(216, 154, 20);
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+#wrapper .dropdown-menu {
+    background-color: rgb(15, 60, 40);
+}
+
+#wrapper nav ul li {
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+    list-style: none;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+#wrapper nav ul li a {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#wrapper nav ul li a:hover {
+    color: rgb(216, 154, 20);
+    transition: 1s;
+}
+
+.navbar-brand img {
+    width: 125px;
+    height: 125px;
+}
+
+/*·······························································································*/
+
+/* FORMULARIO ################################ */
+#formulario {
+    background-color: #ffffff;
+    opacity: 100%;
+    padding: 3%;
+    margin-bottom: 50px;
+    border-radius: 1%;
+    box-sizing: border-box;
+    background-image: url('../P1Img/WP3.jpg');
+    background-attachment: scroll;
+}
+
+.container {
+    background-color: #eeeeee;
+    color: rgb(0, 150, 20);
+    opacity: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    width: auto;
+    height: auto;
+    padding: 3%;
+    margin: 1%;
+    border-radius: 1%;
+    box-sizing: border-box;
+}
+
+/* BG Color y Font ########################### */
+body {
+    background-color: rgb(220, 255, 200);
+    background-image: url('../P1Img/Jardin4.jpg');
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
